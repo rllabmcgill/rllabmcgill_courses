@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.o1;2crg/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="index.css" rel="stylesheet" type="text/css" />
+<title>Machine Learning (COMP-652 and ECSE-608)</title>
+
+</head>
+
+  
+  
+  <body>
+    <div id="masthead">
+
+      Machine Learning (COMP-652 and ECSE-608)<br>
+Fall 2018
+      </div>
+
+    <hr/>
+
+    <div id="menu">
+      <!--enter your hyperlinks here-->
+      <ul>
+	<li><a href="index.html"><p>Home</p></a></li>
+       <li><a href="syllabus.html"><p>Syllabus</p></a></li>
+	<li><a href="lectures.html"><p>Lectures</p></a></li>
+        <li><a href="assignments.html"><p>Assignments</p></a></li>
+	<li><a href="project.html"><p>Project</p></a></li>
+	<li><a href="resources.html"><p>Resources</p></a></li>
+	</ul>
+      <!--end of hyperlinks-->
+      </div>
+
+<div id="mainText">
+
+<center><h2>Lecture Schedule</h2></center>
+
+      <table border='0' cellspacing='0' cellpadding='0'>
+	<tr>
+	  <td width=8%><b>Date</b></td>
+	  <td width=32%><b>Topic</b></td>
+	  <td width=52%><b>Materials</b></td>
+	  </tr>
+<tr><td>Sep. 5</td><td>Introduction and Linear Models</td>
+<td>
+<a href="lectures/lecture-1.pdf">Lecture 1 slides</a> -
+Related material:<br>
+<ul>
+<li> Bishop: Chapters 1.1, 3.1</li>
+</ul>
+</td></tr>
+
+<tr><td>Sep. 10</td><td>Overfitting and Regularization</td>
+<td>
+
+<a href="lectures/lecture-2.pdf">Lecture 2 slides</a> -
+Related material:<br>
+<ul>
+<!-- <li> <a href="https://www.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives/constrained-optimization/a/lagrange-multipliers-single-constraint"> Lagrange multipliers</a> on Khan academy;</li>
+<li> Bishop appendix E</li> -->
+<li>Bishop: Sections 1.3, 3.1, 3.2;</li>
+<li>Hastie: Sections 3.4, 7.1-3, 7.10.</li>
+</ul>
+
+<br>
+
+If you need to catch up on the math:
+<ul>
+<li> A brief <a href="http://cs229.stanford.edu/section/cs229-prob.pdf "> probability review</a> from Stanford University;
+<li> <a href="http://cs229.stanford.edu/section/cs229-linalg.pdf">Linear algebra and matrix calculus review</a> also from Stanford;</li>
+<li> Bishop: Appendices B, C;</li>
+<li> The <a href=https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf> Matrix Cookbook</a> is a collection of matrix identities and relations (very useful for multivariate calculus, e.g. how to take the gradient of a loss w.r.t. a weight vector...).</li>
+</ul>
+
+
+</td></tr>
+
+<tr><td>Sep. 12</td><td>Bayesian and Probabilistic ML </td>
+<td>
+<a href="lectures/lecture-3.pdf">Lecture 3 slides</a> -
+Related lectures and materials <br>
+<ul>
+<li> Bishop PRML: Section 1.2 (Probability Theory); </li>
+<li> Barber BRML: Chapter 1 (Probabilistic Reasoning); </li>
+<li> Video  <a href="https://www.youtube.com/watch?v=mgBrXnjF8R4 "> Bayesian Inference</a> from Zoubin Ghahramani;</li>
+<li> Bishop PRML: Section 2.3 (The Gaussian Distribution). This is a truly excellent and in-depth discussion! </li>
+<li> Bishop PRML: Section 3.3 (Bayesian Linear Regression).</li>
+<li> Nando de Freitas has a series of lectures on Bayesian linear regression.</li>
+</ul>
+</td></tr>
+	      
+	      
+	      
+<tr><td>Sep. 17</td><td>Parametric and Non-Parametric Regression</td>
+<td>
+
+<a href="lectures/lecture-4.pdf">Lecture 4 slides</a> -
+Related material:<br>
+<ul>
+<li> Bishop: Sections 6.1-6.3 (Kernels); </li>
+<li> David Duvenaud: <a href="https://www.cs.toronto.edu/~duvenaud/cookbook/">The Kernel Cookbook.</a> </li>
+<li> Rasmussen & Williams: <a href="http://www.gaussianprocess.org/gpml/chapters/RW2.pdf">Chapter 2.</a></li>
+</ul>
+
+
+</td></tr>
+
+
+<tr><td>Sep. 19</td><td>GPs and Streaming Regression</td>
+<td>
+<a href="lectures/lecture-5.pdf">Lecture 5 slides</a> -
+Related material:<br>
+<ul>
+<li> Bishop: Section 6.4 (Gaussian processes); </li>
+<li> Rasmussen & Williams : <a href="http://www.gaussianprocess.org/gpml/chapters/RW2.pdf">Chapter 2</a> and <a href="http://www.gaussianprocess.org/gpml/chapters/RW5.pdf">Chapter 5</a>;</li>
+<li> Bishop: Section 1.6 (Information theory);</li>
+<li> Odalric-Ambrym Maillard: <a href="https://hal.archives-ouvertes.fr/hal-01349727v2/document">Self-normalization techniques for streaming confident regression</a>.</li>
+<!-- <li> Bishop, Sec. 7.1: Support Vector Machines </li>
+<li> David Sontag's (NYU) slides on SVMs and kernels: lectures
+<a href=http://people.csail.mit.edu/dsontag/courses/ml13/slides/lecture3.pdf> 3</a>,
+<a href=http://people.csail.mit.edu/dsontag/courses/ml13/slides/lecture4.pdf> 4</a>,
+<a href=http://people.csail.mit.edu/dsontag/courses/ml13/slides/lecture5.pdf> 5</a> and
+<a href=http://people.csail.mit.edu/dsontag/courses/ml13/slides/lecture6.pdf> 6 </a>
+<li> A python <a href=http://nbviewer.jupyter.org/github/rllabmcgill/rllabmcgill.github.io/blob/master/COMP-652/lectures/SVMs.ipynb>
+notebook</a> to experiment with regularization in SVMs</li> -->
+</ul>
+</td></tr>
+
+
+
+<tr><td>Sep. 24</td><td>Gaussian Mixture Models and Expectation Maximization<br>
+Guest: Vincent François-Lavet
+</td>
+<td>
+<a href="lectures/lecture-6.pdf">Lecture 6 slides</a> -
+Related material:<br>
+<ul>
+<li>Bishop: Section 9.2 (Mixture of Gaussians).</li>
+<!-- <li><a href="https://www.cs.nyu.edu/~roweis/lle/papers/lleintro.pdf">Locally Linear Embeddings</a> (optional)</li> -->
+</ul>
+</td></tr>
+
+	      
+	      
+<tr><td>Sep. 26</td><td>Neural Networks and Convolutional Neural Networks</td>
+<td>
+<a href="lectures/lecture-7.pdf">Lecture 7 slides</a> -
+Related material:<br>
+<ul>
+<li><a href="http://mlg.eng.cam.ac.uk/zoubin/talks/nips09npb.pdf">Overview of Non-parametric Bayesian Models</a></li>
+<li><a href="http://mlss2011.comp.nus.edu.sg/uploads/Site/lect1gp.pdf">Tutorial on Gaussian Processes (why I don't use SVMs)</a></li>
+<li><a href="http://videolectures.net/mlss09uk_rasmussen_gp/">Carl Rasmussen's Lecture on Gaussian Processes</a></li>
+<li><a href="http://www.gaussianprocess.org/gpml/">Book on Gaussian Processes</a></li>
+</ul>
+</td></tr>
+
+	      
+	      
+	      
+<tr><td>Oct. 1</td><td>No lecture: Quebec elections</td><td>
+<!-- <a href="lectures/lecture-8.pdf">Lecture 8 slides</a> - Related material:<br>
+<ul>
+
+<li> Olivier Bousquet's <a href=http://ml.typepad.com/Talks/pdf2522.pdf>slides from MLSS 2003 </a> </li>
+<li> Alexander Rakhlin's <a href=http://www-stat.wharton.upenn.edu/~rakhlin/ml_summer_school.pdf>slides from MLSS 2012 </a>
+<li> Mehryar Mohri's lectures <a href=http://www.cs.nyu.edu/~mohri/mls/>slides</a> at NYU </li>
+<li>
+Books to go further:
+<ul>
+<li> <a href=http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/understanding-machine-learning-theory-algorithms.pdf>Understanding Machine Learning</a>, Shai Shalev-Shwartz and Shai Ben-David </li>
+<li> Foundations of Machine Learning,
+Mehryar Mohri, Afshin Rostamizadeh, and Ameet Talwalkar
+</ul>
+</li>
+</ul> -->
+
+
+
+</td></tr>
+
+<tr><td>Oct. 3</td><td>Recurrent Neural Networks</td><td>
+<a href="lectures/lecture-9.pdf">Lecture 9 slides</a>
+</td></tr>	      
+	   
+
+<tr><td>Oct. 10</td><td>Stochastic bandits</td><td>
+<a href="lectures/lecture-10.pdf">Lecture 10 slides</a>
+- Related material:<br>
+<ul>
+<li><a href="http://downloads.tor-lattimore.com/banditbook/book.pdf">Bandit Algorithms: Chapters 2, 4, 7, Section 36.1</a></li>
+</ul>
+</td></tr>	      
+	   
+
+<tr><td>Oct. 15</td><td>Adversarial games</td>
+<td>
+<a href="lectures/lecture-11.pdf">Lecture 11 slides</a> -
+Related material:<br>
+<ul>
+<li><a href="http://downloads.tor-lattimore.com/banditbook/book.pdf">Bandit Algorithms: Chapters 11, 12, 13</a></li>
+</ul>
+</td></tr>
+
+
+
+
+
+<tr><td>Oct. 17</td><td>Contextual and structured online learning</td>
+<td>
+<a href='lectures/lecture-12.pdf'>Lecture 12 slides</a> -
+Related material:<br>
+<ul>
+<li><a href="http://downloads.tor-lattimore.com/banditbook/book.pdf">Bandit Algorithms: Chapter 19</a></li>
+</ul>
+<li><a href="https://papers.nips.cc/paper/4417-improved-algorithms-for-linear-stochastic-bandits.pdf">OFUL</a></li>   
+<li><a href="http://www.jmlr.org/papers/volume19/17-404/17-404.pdf">Kernel-UCB/Kernel-TS</a></li>
+</ul>
+</td>
+</tr>
+
+	  
+<tr><td>Oct. 22</td><td>Probabilistic Graphical Models</td>
+<td>
+<a href="lectures/lecture-13.pdf">Lecture 13 slides</a> -
+Related material:<br>
+<ul>
+<li><a href="http://www.cs.columbia.edu/~blei/talks/2016_NIPS_VI_tutorial.pdf">Variational Inference : NIPS 2017 Tutorial - courtesy of David Blei, Rajesh Ranganath, Shakir Mohamed</a></li>
+<li><a href="https://arxiv.org/abs/1601.00670">Variational Inference : Review for Statisticians</a></li>
+</ul>
+</td></tr>	  
+	  
+
+<tr><td>Oct. 24</td><td>Inference in Graphical Models</td>
+<td>
+<a href='lectures/lecture-14.pdf'>Lecture 14 slides</a> 
+</td>
+</tr>
+	
+
+	  
+<tr><td>Oct. 29</td><td>Apprximate Inference </td><td>
+<a href='lectures/lecture-15.pdf'>Lecture 15 slides</a>
+</td></tr>
+
+<tr><td>Oct .31</td><td>Variational Inference</td>
+<td>
+<a href='lectures/lecture-17.pdf'>Lecture 16 slides</a> 
+</td>
+</tr>
+	  
+	  
+<tr><td>Nov. 5</td><td>Bayesian Optimization</td>
+<td>
+<a href='lectures/lecture-16.pdf'>Lecture 17 slides</a>
+Related material:<br>
+<ul>
+<li><a href="https://arxiv.org/pdf/1012.2599.pdf">Brochu et al. (2010): A Tutorial on Bayesian Optimization of Expensive Cost Functions, with Application to Active User Modeling and Hierarchical Reinforcement Learning</a></li>
+<li><a href="http://papers.nips.cc/paper/4522-practical-bayesian-optimization-of-machine-learning-algorithms.pdf">Snoek et al. (2012): AutoML application</a></li>
+<li><a href="http://www.gaussianprocess.org/gpml/chapters/RW4.pdf">Rasmussen & Williams: Chapter 4 (covariance functions)</a></li>
+<li><a href="http://proceedings.mlr.press/v37/snoek15.pdf">Snoek et al. (2015): Scalable Bayesian optimization using deep neural networks</a></li>
+</ul>
+</td>
+</tr>
+
+
+
+
+
+	  
+	
+<tr><td>Nov. 7</td><td>Generative Models (Variational Auto-Encoders)</td>
+<td>
+<a href='lectures/lecture-18.pdf'>Lecture 18 slides (Slides from Fei Fei Li)</a> 
+</td>
+</tr>
+	
+<tr><td>Nov. 12</td><td>Optimization Methods (Guest Lecture : Fabian Pedregosa) </td><td>
+<a href="http://fa.bianp.net/teaching/2018/COMP-652/">Optimization Lecture Notes</a>
+</td></tr>
+
+	
+
+	
+<tr><td>Nov. 14</td><td>Reinforcement Learning II </td><td>
+<a href='lectures/lecture-20.pdf'>Lecture 20 slides</a>
+</td></tr>
+
+<tr><td>Nov. 19</td><td>Reinforcement Learning III</td><td></td></tr>
+
+	  
+<tr><td>Nov. 21</td><td>Generative Models (Guest Lecturer : Philip Bachman, Microsoft Research Montreal) </td><td>
+<a href='lectures/lecture-21.pdf'>Lecture 21 slides</a>
+</td></tr>
+
+
+<tr><td>Nov. 26</td><td>No class due to project</td><td></td></tr>
+<tr><td>Nov. 28</td><td>Project poster session</td><td></td></tr>
+
+<tr><td>Nov. 30</td><td>Recap</td><td></td></tr>
+
+<tr><td>Dec. 3</td><td>No class: Project report due</td><td></td></tr>
+
+<tr><td>Dec. 14</td><td>Final exam from 6:05pm - 8:55pm in LEA 219</td><td></td></tr>
+
+
+<!-- <tr><td>Nov. 21</td><td>In-class midtern exam</td><td>
+You are allowed one double-sided &quot;cheat sheet&quot;<br>
+<a href="midterm/ml-sample-questions-2015.pdf">Some examples of midterm-style questions with solutions</a><br>
+<a href="midterm/ml-mid-2016.pdf">Midterm from 2016</a>
+</td></tr>
+<tr><td>Nov. 27</td><td>Reinforcement Learning</td><td>
+<a href='lectures/lecture-21.pdf'>Lecture 21 slides</a>
+</td></tr>
+<tr><td>Nov. 29</td><td>More on Reinforcement Learning</td><td></td></tr>
+<tr><td>Dec. 4</td><td>no class</td><td></td></tr>
+<tr><td>Dec. 6</td><td>no class</td><td></td></tr>
+<tr><td>Dec. 11<br> (1-5pm)</td><td>Projects Presentations 1</td><td></td></tr>
+<tr><td>Dec. 13<br> (1-5pm)</td><td>Projects Presentations 2</td><td></td></tr> -->
+
+
+</table>
+<p>
+&nbsp;
+</p>
+
+  </body>
+</html>
